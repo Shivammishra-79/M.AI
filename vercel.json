@@ -1,15 +1,18 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "./main.py",
-            "use": "@vercel/python"
-        }
+      {
+        "src": "main.py",
+        "use": "@vercel/python"
+      }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/main.py"
-        }
-    ]
-}
+      {
+        "src": "/(.*)",
+        "dest": "main.py"
+      }
+    ],
+    "env": {
+      "GEMINI_API_KEY": "AIzaSyAGaAxB_aZA-ntrBedX9BZL94OFPtG8wzI"
+    }
+  }
